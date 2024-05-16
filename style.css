@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    background: url(./assets/luxurysuite.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+
+
+nav{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color:white;
+    padding: 20px 10px;
+    position: sticky;
+    top: 0px;
+    
+}
+nav ul li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li:hover{
+    color: orangered;
+    cursor: pointer;
+}
+.logo a{
+    margin-left: 20px;
+    border: 2px solid white;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+.logo a:hover{
+    border: 2px solid orangered;
+    color: orangered;
+
+}
+ul button{
+    width: 105px;
+    height: 35px;
+    border: transparent;
+    background-color: orangered;
+    color: white;
+}
+ul button:hover{
+    background-color: white;
+    color: black;
+}
+.content{
+    width: 100%;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+    
+}
+.content h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+}
+.input input{
+    
+    width: 160px;
+    height: 40px;
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    border-radius: 3px;
+    padding: 10px;
+    margin-left: 8px;
+    box-shadow: 1px 1px 2px 2px black;
+}
+.input input:placeholder-shown{
+    color: white;
+    font-weight: bold;
+}
+
+#booknow{
+    background-color: orangered;
+    border: transparent;
+    color: white;
+}
+#booknow:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+::placeholder{
+    color: white;
+}
+.menu-line{
+    height: 3px;
+    width: 20px;
+    background-color: white;
+    margin-bottom: 3px;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+
+
+@media all and (max-width:640px)
+{
+    .input{
+        position: relative;
+        top: 40px;
+    }
+    .input input{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        width: 240px;
+    }
+    #booknow{
+        align-items: center;
+    }
+    .content h1{
+        position: relative;
+        top: 10px;
+    }
+    nav{
+        flex-direction: column;
+        background-color: black;
+        z-index: 10;
+    }
+    nav ul li{
+        display: block;
+        padding: 10px 0;
+        background-color: black;
+    }
+    ul{
+        text-align: center;
+        padding: 0;
+        display: none;
+    }
+    .logo{
+        align-self: flex-start;
+        margin: 10px 0px 0px 20px;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+    }
+    .showmenu{
+        display: block;
+    }
+}
+@media all and (max-width:900px)
+{
+    .input{
+        position: relative;
+        top: 40px;
+    }
+    .input input{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        width: 240px;
+    }
+    #booknow{
+        align-items: center;
+    }
+    .content h1{
+        position: relative;
+        top: 10px;
+    }
+    nav{
+        flex-direction: column;
+        background-color: black;
+        z-index: 10;
+    }
+    nav ul li{
+        display: block;
+        padding: 10px 0;
+        background-color: black;
+    }
+    ul{
+        text-align: center;
+        padding: 0;
+        display: none;
+    }
+    .logo{
+        align-self: flex-start;
+        margin: 10px 0px 0px 20px;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        transition: all 0.5s ease;
+    }
+    .showmenu{
+        display: block;
+        
+    }
+}
+footer p{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}

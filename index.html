@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheRiver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <nav>
+        <div class="logo">
+            <a href="#">The River</a>
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>AboutUs</li>
+            <li>Rooms</li>
+            <li>Blog</li>
+            <li>Contact</li>
+            <li><button>Order Now</button></li>
+            <li><button>083-398798434</button></li>
+        </ul>
+        <div class="menu">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>
+
+    <br>
+
+    <div class="content">
+        <h1>A LUXURY STAY</h1>
+       
+        <center>
+            <div class="input">
+                <input type="text" placeholder="Check In">
+                <input type="text"  placeholder="Check Out">
+                <input type="number" placeholder="Children">
+                <input type="number" placeholder="Rooms">
+                <input type="submit" value="Book Now" id="booknow" >
+            </div>
+        </center>
+       
+    </div>
+    <footer>
+        <p>&copy;Copyright & Developed By VISHAL SL BCA</p>
+        
+    </footer>
+    
+    
+    <script>
+        const menu=document.querySelector('.menu')
+        const menuList=document.querySelector('nav ul')
+        menu.addEventListener('click',()=>{
+            menuList.classList.toggle('showmenu')
+        });
+    </script>
+</body>
+</html>
